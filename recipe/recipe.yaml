@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2.0.1"
+  version: "2.1.0"
 
 package:
   name: streamlit-pdf
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/streamlit-pdf/streamlit_pdf-${{ version }}.tar.gz
-  sha256: c6306381d0eeb291d7a4f6eb16cfbf937560a29be78049c64251fa2c3276e1a2
+  sha256: 2e2a79140335087517e83b024277750fb910d61fd24052d886c0def4f856fc2d
 
 build:
   number: 0
@@ -31,8 +31,8 @@ tests:
         - streamlit_pdf
       pip_check: true
       python_version:
-       - ${{ python_min }}.*
-       - "*"
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: A Streamlit component for viewing PDF files
